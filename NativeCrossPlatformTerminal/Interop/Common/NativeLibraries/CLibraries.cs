@@ -1,4 +1,4 @@
-﻿namespace NativeTerminal.Interop.NativeLibraries
+﻿namespace NativeTerminal.Interop.Common.NativeLibraries
 {
     /// <summary>
     ///  Provide constant strings(libraries) for P/Invoke for the
