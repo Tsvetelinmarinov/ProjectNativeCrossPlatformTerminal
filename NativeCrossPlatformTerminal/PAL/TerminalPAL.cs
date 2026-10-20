@@ -14,6 +14,12 @@ namespace NativeTerminal.PAL
     /// </summary>
     internal sealed class TerminalPAL : ITerminalPlatformAbstraction
     {
+        // Internal constructor.
+        internal TerminalPAL()
+        {
+        }
+
+
         /// <summary>
         ///  Writes the text to the standard output.
         /// </summary>
