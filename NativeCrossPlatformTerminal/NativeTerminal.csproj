@@ -6,8 +6,4 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Internal\Factory\" />
-  </ItemGroup>
-
 </Project>
