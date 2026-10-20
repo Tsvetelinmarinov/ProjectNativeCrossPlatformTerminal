@@ -1,14 +1,12 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace NativeTerminal.Internal.Factory
+﻿namespace NativeTerminal.Internal.Factory
 {
     /// <summary>
     ///  Creates ITerminalCore objects.
     /// </summary>
-    internal class TerminalCoreFactory : ITerminalCoreFactory
+    internal static class TerminalCoreFactory 
     {
         // Creates core terminal.
-        public ITerminalCore ConstructCoreTerminal()
+        internal static ITerminalCore ConstructCoreTerminal()
             => new TerminalCore();
     }
 }
