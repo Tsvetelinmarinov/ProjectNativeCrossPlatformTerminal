@@ -1,8 +1,9 @@
-﻿namespace NativeTerminal.Internal.Factory
+﻿using System.Runtime.CompilerServices;
+
+namespace NativeTerminal.Internal.Factory
 {
     internal interface ITerminalCoreFactory
     {
-        TerminalCore GetRawCoreTerminal();
-        ITerminalCore Abstract();
+        ITerminalCore ConstructCoreTerminal();
     }
 }
