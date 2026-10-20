@@ -5,7 +5,7 @@
     /// </summary>
     internal static class TerminalFactory
     {
-        internal static ITerminalPlatformAbstraction ConstructTerminal()
+        internal static ITerminalPlatformAbstraction ConstructTerminalCore()
             => new TerminalPAL();
     }
 }
