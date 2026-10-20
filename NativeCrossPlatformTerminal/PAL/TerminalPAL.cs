@@ -73,11 +73,15 @@ namespace NativeTerminal.PAL
                     }
                     else if (OperatingSystem.IsLinux())
                     {
-                        TerminalPALException.Throw("Linux is not supported for now.");
+                        throw new TerminalPALException("Linux is not supported for now.");
                     }
                     else if (OperatingSystem.IsMacOS())
                     {
-                        TerminalPALException.Throw("MacOS is not supported for now.");
+                        throw new TerminalPALException("MacOS is not supported for now.");
+                    }
+                    else
+                    {
+                        throw new TerminalPALException(PALErrors.UnknownOS);
                     }
                 }
             }
