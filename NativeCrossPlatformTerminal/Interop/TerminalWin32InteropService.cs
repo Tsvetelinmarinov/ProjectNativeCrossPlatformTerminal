@@ -22,7 +22,7 @@ namespace NativeTerminal.Interop
             char* dataBufferPointer,
             uint numberOfCharsToWrite,
             out uint numberOfCharsWritten
-        ) {
+        ){
             return Unmanaged__WriteConsoleW(
                 outputStreamPointer,
                 dataBufferPointer,
@@ -37,8 +37,8 @@ namespace NativeTerminal.Interop
 
         #region GetStdHandle P/Invoke Logic
 
-        // Gets pointer to the specified(input or output) system stream.
-        // TerminalIOCode.STDIN specifies the standard input stream and
+          // Gets pointer to the specified(input or output) system stream.
+         // TerminalIOCode.STDIN specifies the standard input stream and
         // TerminalIOCode.STDOUT specifies the standard output stream.
         [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
         [LibraryImport(
@@ -64,11 +64,11 @@ namespace NativeTerminal.Interop
         [UnmanagedCallConv(CallConvs = [typeof(CallConvStdcall)])]
         [return: MarshalAs(UnmanagedType.Bool)]
         private static unsafe partial bool Unmanaged__WriteConsoleW(
-            void* systemIoStreamPointer, // Pointer to the system input/output stream.
-            char* dataBufferPointer, // Pointer to the string/char[] with the text to write.
-            uint numberOfCharsToWrite, // How much chars from the buffer to be written.
+            void* systemIoStreamPointer,      // Pointer to the system input/output stream.
+            char* dataBufferPointer,         // Pointer to the string/char[] with the text to write.
+            uint numberOfCharsToWrite,      // How much chars from the buffer to be written.
             out uint numberOfCharsWritten, // Number of successfully written chars.
-            void* optionalControlPointer // Additional control pointer: in our cases(read/write) - always null.
+            void* optionalControlPointer  // Additional control pointer: in our cases(read/write) - always null.
         );
 
         #endregion
