@@ -6,7 +6,7 @@
     ///  converts high-level C# data types to low-level C data types.
     ///  Abstracts the operating system.
     /// </summary>
-    internal static class TerminalPAL
+    internal sealed class TerminalPAL : ITerminalPlatformAbstraction
     {
     }
 }
