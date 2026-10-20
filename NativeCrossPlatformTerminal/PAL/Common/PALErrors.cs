@@ -7,6 +7,7 @@
     internal static class PALErrors
     {
         internal const string OnlyWin32 = "PAL: Only Windows OS supports that functionality! Operation canceled!";
+        internal const string UnknownOS = "Unknown or unsupported operating system!";
         internal const string StdStreamPtrError = "Unable to get pointer to the specified stream. Internal error!";
         internal const string ErrorWritingToStdOut = "Error while writing the data to the standard output stream!";
     }
