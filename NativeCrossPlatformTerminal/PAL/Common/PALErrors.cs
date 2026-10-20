@@ -6,5 +6,6 @@
     /// </summary>
     internal static class PALErrors
     {
+        internal const string OnlyWin32 = "PAL: Only Windows OS supports that functionality! Operation canceled!";
     }
 }
