@@ -20,7 +20,7 @@ namespace NativeTerminal.PAL
         /// <returns>
         ///  Pointer to the specified stream.
         /// </returns>
-        public unsafe void* GetPointerToStandardStream(int standardStreamCode)
+        public IntPtr GetPointerToStandardStream(int standardStreamCode)
         {
             // Check the OS - only Windows supports that!
             if (OperatingSystem.IsWindows() is false)
