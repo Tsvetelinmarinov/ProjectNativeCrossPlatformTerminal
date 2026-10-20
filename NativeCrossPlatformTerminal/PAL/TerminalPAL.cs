@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NativeTerminal.PAL.Common;
+using NativeTerminal.PAL.Exceptions;
+using System;
 
 namespace NativeTerminal.PAL
 {
@@ -10,23 +12,5 @@ namespace NativeTerminal.PAL
     /// </summary>
     internal sealed class TerminalPAL : ITerminalPlatformAbstraction
     {
-        /// <summary>
-        /// Gets pointer to the standard input or output streams.
-        /// </summary>
-        /// <param name="standardStreamCode">
-        ///  The code of the standard stream: 
-        ///  STDIN = -10, STDOUT = -11.
-        /// </param>
-        /// <returns>
-        ///  Pointer to the specified stream.
-        /// </returns>
-        public IntPtr GetPointerToStandardStream(int standardStreamCode)
-        {
-            // Check the OS - only Windows supports that!
-            if (OperatingSystem.IsWindows() is false)
-            {
-
-            }
-        }
     }
 }
