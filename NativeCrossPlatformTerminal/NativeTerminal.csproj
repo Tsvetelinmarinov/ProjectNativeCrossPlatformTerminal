@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Internal\Factory\" />
-    <Folder Include="Internal\" />
   </ItemGroup>
 
 </Project>
